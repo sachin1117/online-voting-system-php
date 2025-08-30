@@ -104,20 +104,6 @@ vote.php	POST	Submit a vote
 results.php	GET	Show election result
 admin.php	GET	Admin dashboard
 export.php	GET	Export results (Excel)
-📂 Project Files
-online-voting-system-php/
-├── index.php          # Landing page
-├── register.php       # Voter registration
-├── login.php          # User login
-├── logout.php         # User logout
-├── vote.php           # Voting page
-├── results.php        # Election results
-├── admin.php          # Admin dashboard
-├── create_admin.php   # Script to create initial admin
-├── export.php         # Export results to Excel
-├── config.php         # DB + security config
-├── database.sql       # MySQL schema
-└── assets/            # CSS, JS, images (if any)
 
 🤝 Contributing
 
