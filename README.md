@@ -1,17 +1,12 @@
 🗳️ Online Voting System (PHP + MySQL)
 
-
-
-
-
-
 A secure and lightweight Online Voting System built with PHP & MySQL.
-Users can register, log in, and cast votes online, while an admin dashboard provides full control to manage candidates, voters, and election settings. The system also supports real-time results and Excel export of votes.
+Users can register, log in, and cast votes online, while an admin dashboard provides full control to manage candidates, voters, and election settings.
+The system also supports real-time results and Excel export of votes.
 
 📌 GitHub Repo → online-voting-system-php
 
 ✨ Features
-
 👤 User Features
 
 Register and log in securely
@@ -59,15 +54,13 @@ cd online-voting-system-php
 
 
 Setup Database
-
 Import the provided database.sql file into MySQL:
 
 mysql -u root -p < database.sql
 
 
 Configure Database
-
-Open config.php and update DB credentials:
+Edit config.php:
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
@@ -79,14 +72,11 @@ Run the Project
 
 Place the folder in htdocs (XAMPP) or www (WAMP).
 
-Start Apache & MySQL services.
+Start Apache & MySQL.
 
-Open browser → http://localhost/online-voting-system-php
+Visit: http://localhost/online-voting-system-php
 
 ⚙️ Environment Variables (.env Example)
-
-If you prefer .env file instead of editing config.php:
-
 DB_HOST=localhost
 DB_USER=root
 DB_PASSWORD=your_password
@@ -114,19 +104,20 @@ vote.php	POST	Submit a vote
 results.php	GET	Show election result
 admin.php	GET	Admin dashboard
 export.php	GET	Export results (Excel)
-📦 online-voting-system-php
- ┣ 📜 index.php         # Landing page
- ┣ 📜 register.php      # Voter registration
- ┣ 📜 login.php         # User login
- ┣ 📜 logout.php        # User logout
- ┣ 📜 vote.php          # Voting page
- ┣ 📜 results.php       # Election results
- ┣ 📜 admin.php         # Admin dashboard
- ┣ 📜 create_admin.php  # Script to create initial admin
- ┣ 📜 export.php        # Export results to Excel
- ┣ 📜 config.php        # DB + security config
- ┣ 📜 database.sql      # MySQL schema
- ┗ 📂 assets/           # CSS, JS, images (if any)
+📂 Project Files
+online-voting-system-php/
+├── index.php          # Landing page
+├── register.php       # Voter registration
+├── login.php          # User login
+├── logout.php         # User logout
+├── vote.php           # Voting page
+├── results.php        # Election results
+├── admin.php          # Admin dashboard
+├── create_admin.php   # Script to create initial admin
+├── export.php         # Export results to Excel
+├── config.php         # DB + security config
+├── database.sql       # MySQL schema
+└── assets/            # CSS, JS, images (if any)
 
 🤝 Contributing
 
