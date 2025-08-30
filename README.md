@@ -8,17 +8,19 @@
 A secure and lightweight Online Voting System built with PHP & MySQL.
 Users can register, log in, and cast votes online, while an admin dashboard provides full control to manage candidates, voters, and election settings. The system also supports real-time results and Excel export of votes.
 
+📌 GitHub Repo → online-voting-system-php
+
 ✨ Features
 
-👤 User Module
+👤 User Features
 
 Register and log in securely
 
-Cast vote (one person = one vote)
+Cast vote (one user = one vote)
 
-View election results (if enabled by admin)
+View election results (if enabled)
 
-🛠️ Admin Module
+🛠️ Admin Features
 
 Manage candidates (add, edit, delete)
 
@@ -26,7 +28,7 @@ Manage registered voters
 
 Control election settings (start, stop, hide results)
 
-View & export results in Excel
+Export results in Excel
 
 🔒 Security
 
@@ -42,17 +44,17 @@ Role-based access (Admin & Voter)
 
 Frontend: HTML, CSS, Bootstrap, JavaScript
 
-Backend: PHP (Core PHP, PDO for DB)
+Backend: PHP (PDO for DB)
 
 Database: MySQL
 
 Server: Apache (XAMPP / WAMP / LAMP / Docker)
 
-🚀 Installation & Setup Guide
+🚀 Installation & Setup
 
 Clone the Repository
 
-git clone https://github.com/yourusername/online-voting-system-php.git
+git clone https://github.com/sachin1117/online-voting-system-php.git
 cd online-voting-system-php
 
 
@@ -65,7 +67,7 @@ mysql -u root -p < database.sql
 
 Configure Database
 
-Open config.php and update your DB credentials:
+Open config.php and update DB credentials:
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
@@ -79,12 +81,11 @@ Place the folder in htdocs (XAMPP) or www (WAMP).
 
 Start Apache & MySQL services.
 
-Open browser and go to:
-👉 http://localhost/online-voting-system-php
+Open browser → http://localhost/online-voting-system-php
 
 ⚙️ Environment Variables (.env Example)
 
-If you want to use a .env file instead of editing config.php:
+If you prefer .env file instead of editing config.php:
 
 DB_HOST=localhost
 DB_USER=root
@@ -97,7 +98,6 @@ SESSION_SECRET=your_random_secret
 ▶️ Running the Project
 Using XAMPP / WAMP
 # Start Apache & MySQL
-# Access the project in your browser
 http://localhost/online-voting-system-php
 
 Using PHP Built-in Server
@@ -114,46 +114,24 @@ vote.php	POST	Submit a vote
 results.php	GET	Show election result
 admin.php	GET	Admin dashboard
 export.php	GET	Export results (Excel)
-🖥️ Example Usage
-
-Voter:
-
-Register at register.php
-
-Login at login.php
-
-Cast vote at vote.php
-
-Check results at results.php (if enabled)
-
-Admin:
-
-Access admin.php
-
-Add/edit/delete candidates
-
-Enable/disable results
-
-Export results in Excel
-
-📂 Folder Structure
+📂 Project Files
 📦 online-voting-system-php
  ┣ 📜 index.php         # Landing page
  ┣ 📜 register.php      # Voter registration
- ┣ 📜 login.php         # Login page
- ┣ 📜 logout.php        # Logout script
+ ┣ 📜 login.php         # User login
+ ┣ 📜 logout.php        # User logout
  ┣ 📜 vote.php          # Voting page
  ┣ 📜 results.php       # Election results
  ┣ 📜 admin.php         # Admin dashboard
  ┣ 📜 create_admin.php  # Script to create initial admin
  ┣ 📜 export.php        # Export results to Excel
- ┣ 📜 config.php        # Database & security config
+ ┣ 📜 config.php        # DB + security config
  ┣ 📜 database.sql      # MySQL schema
- ┗ 📂 assets/           # CSS, JS, images
+ ┗ 📂 assets/           # CSS, JS, images (if any)
 
 🤝 Contributing
 
-Contributions are welcome! 🚀
+Contributions are welcome 🚀
 
 Fork the repo
 
@@ -165,23 +143,24 @@ Push & create a Pull Request
 
 📜 License
 
-This project is licensed under the MIT License. You are free to use, modify, and distribute.
+This project is licensed under the MIT License.
 
-👩‍💻 Author / Contact
+👨‍💻 Author / Contact
 
-Developed by [Your Name]
-📧 Email: yourname@example.com
+Author: Sachin Kumar
 
-🌐 GitHub: @yourusername
+📧 Email: sachinkumar69344@gmail.com
+
+🌐 GitHub: sachin1117
 
 🔮 Next Steps
 
-🌍 Deploy to Heroku, Vercel, or cPanel
+🌍 Deploy to Heroku / Vercel / cPanel
 
-🐳 Add Docker support for quick setup
+🐳 Add Docker support
 
-🔑 Add JWT-based authentication (API support)
+🔑 Add email verification for voters
 
-🎨 Upgrade UI with Tailwind / Bootstrap 5
+🎨 Improve UI with Bootstrap 5 / Tailwind
 
-📊 Add analytics dashboard for admins
+📊 Add admin analytics dashboard
