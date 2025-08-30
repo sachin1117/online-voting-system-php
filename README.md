@@ -114,7 +114,6 @@ vote.php	POST	Submit a vote
 results.php	GET	Show election result
 admin.php	GET	Admin dashboard
 export.php	GET	Export results (Excel)
-📂 Project Files
 📦 online-voting-system-php
  ┣ 📜 index.php         # Landing page
  ┣ 📜 register.php      # Voter registration
